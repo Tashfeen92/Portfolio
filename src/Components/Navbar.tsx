@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"; // Import useState
+import { useState, useEffect } from "react";
 import {
   Box,
   Image,
