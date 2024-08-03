@@ -14,17 +14,12 @@ import { FloatingLabel, Form, FormControl } from "react-bootstrap";
 import { useForm, ValidationError } from "@formspree/react";
 import theme from "../theme";
 
-
-
 const Contact = () => {
- 
-const grad=useColorModeValue(theme.formbackground.light,theme.formbackground.dark);
-
+  const grad = useColorModeValue(
+    theme.formbackground.light,
+    theme.formbackground.dark
+  );
   const [state, handleSubmit] = useForm("xaygeqor");
-
-
-
-
   if (state.succeeded) {
     return (
       <Box>
@@ -55,7 +50,7 @@ const grad=useColorModeValue(theme.formbackground.light,theme.formbackground.dar
               <BsRocket style={{ color: "red" }} />
             </HStack>
             <br></br>
-            <Button  bgGradient={'linear(to-r, grey, orange)'}>
+            <Button bgGradient={"linear(to-r, grey, orange)"}>
               <a
                 href="https://www.instagram.com/roy.xaeed_anwar"
                 target="_blank"
@@ -111,7 +106,11 @@ const grad=useColorModeValue(theme.formbackground.light,theme.formbackground.dar
             <BsRocket style={{ color: "red" }} />
           </HStack>
           <br></br>
-          <Button _hover={{backgroundColor:'pink', color:'white'}} variant={'outline'} bgGradient={'linear(to-r, grey, orange)'} >
+          <Button
+            _hover={{ backgroundColor: "pink", color: "white" }}
+            variant={"outline"}
+            bgGradient={"linear(to-r, grey, orange)"}
+          >
             <a
               href="https://www.instagram.com/roy.xaeed_anwar"
               target="_blank"
@@ -123,7 +122,7 @@ const grad=useColorModeValue(theme.formbackground.light,theme.formbackground.dar
         </Box>
         <Box padding={5} margin={"8"} alignContent={"center"} marginTop={25}>
           <Card
-          bgGradient={grad}
+            bgGradient={grad}
             borderRadius={"30px"}
             border={"2px solid gold"}
             backdropBlur={"base"}
@@ -131,19 +130,26 @@ const grad=useColorModeValue(theme.formbackground.light,theme.formbackground.dar
           >
             <CardBody>
               <Form onSubmit={handleSubmit}>
-                <Heading color={'white'} textAlign={"center"}>Mail Me</Heading>
+                <Heading color={"white"} textAlign={"center"}>
+                  Mail Me
+                </Heading>
 
                 <FloatingLabel
-                 
-                style={{background:'transparent', backgroundColor:'transparent'}}
+                  style={{
+                    background: "transparent",
+                    backgroundColor: "transparent",
+                  }}
                   controlId="nameInput"
-                  
                   label="Name"
                   className="mb-3"
                 >
                   <Form.Control
-                  minLength={4}
-                     style={{color:'white',background:'transparent', backgroundColor:'transparent'}}
+                    minLength={4}
+                    style={{
+                      color: "white",
+                      background: "transparent",
+                      backgroundColor: "transparent",
+                    }}
                     required
                     id="name"
                     type="text"
@@ -156,18 +162,24 @@ const grad=useColorModeValue(theme.formbackground.light,theme.formbackground.dar
                     errors={state.errors}
                   />
                 </FloatingLabel>
-                <FloatingLabel 
-                 style={{background:'transparent', backgroundColor:'transparent'}}
+                <FloatingLabel
+                  style={{
+                    background: "transparent",
+                    backgroundColor: "transparent",
+                  }}
                   className="mb-3"
-                 
                   controlId="emailInput"
                   label="Email"
                 >
-                  <Form.Control color="white"
-                  minLength={10}
-                     style={{color:'white',background:'transparent', backgroundColor:'transparent'}}
+                  <Form.Control
+                    color="white"
+                    minLength={10}
+                    style={{
+                      color: "white",
+                      background: "transparent",
+                      backgroundColor: "transparent",
+                    }}
                     required
-                   
                     id="email"
                     type="email"
                     name="email"
@@ -179,16 +191,22 @@ const grad=useColorModeValue(theme.formbackground.light,theme.formbackground.dar
                     errors={state.errors}
                   />
                 </FloatingLabel>
-                <FloatingLabel 
-                 style={{background:'transparent', backgroundColor:'transparent'}}
+                <FloatingLabel
+                  style={{
+                    background: "transparent",
+                    backgroundColor: "transparent",
+                  }}
                   className="mb-3"
-                 
                   controlId="subjectInput"
                   label="Subject"
                 >
                   <FormControl
-                  minLength={10}
-                   style={{color:'white',background:'transparent', backgroundColor:'transparent'}}
+                    minLength={10}
+                    style={{
+                      color: "white",
+                      background: "transparent",
+                      backgroundColor: "transparent",
+                    }}
                     required
                     id="subject"
                     type="text"
@@ -201,17 +219,27 @@ const grad=useColorModeValue(theme.formbackground.light,theme.formbackground.dar
                     errors={state.errors}
                   />
                 </FloatingLabel>
-                <FloatingLabel  controlId="messageInput" label="Message"
-                 style={{background:'transparent', backgroundColor:'transparent'}}>
+                <FloatingLabel
+                  controlId="messageInput"
+                  label="Message"
+                  style={{
+                    background: "transparent",
+                    backgroundColor: "transparent",
+                  }}
+                >
                   <FormControl
-                  minLength={15}
-                   style={{color:'white',background:'transparent',height:'100px', backgroundColor:'transparent'}}
+                    minLength={15}
+                    style={{
+                      color: "white",
+                      background: "transparent",
+                      height: "100px",
+                      backgroundColor: "transparent",
+                    }}
                     as={"textarea"}
                     required
                     id="message"
                     type="text"
                     name="message"
-                   
                     placeholder="Enter Your Message"
                   ></FormControl>
                   <ValidationError
@@ -220,10 +248,9 @@ const grad=useColorModeValue(theme.formbackground.light,theme.formbackground.dar
                     errors={state.errors}
                   />
                 </FloatingLabel>
-
                 <HStack marginTop={"5"}>
                   <Button
-                   backgroundColor={'blue.300'}
+                    backgroundColor={"blue.300"}
                     type="submit"
                     disabled={state.submitting}
                   >

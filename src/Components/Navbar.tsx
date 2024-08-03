@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";// Import useState
+import { useState, useEffect } from "react"; // Import useState
 import {
   Box,
   Image,
@@ -43,43 +43,55 @@ const Navbar = () => {
   }, [displayValue]);
 
   return (
-    <Box  justifyContent="space-between">
-      <Flex alignItems="center" justifyContent="space-between" px={[4, 8]} py={3}>
+    <Box justifyContent="space-between">
+      <Flex
+        alignItems="center"
+        justifyContent="space-between"
+        px={[4, 8]}
+        py={3}
+      >
         <Image src={logo} width="230px" />
         {/* Show the menu button on smaller screens */}
         <IconButton
           aria-label="Open menu"
           icon={<HamburgerIcon />}
           variant="ghost"
-          
           display={displayValue === "none" ? "flex" : "none"}
           onClick={toggleDrawer}
         />
         {/* Show the navigation links on larger screens */}
-        <HStack as="nav" spacing={4}  display={displayValue}>
-        <Link to="/">
-            <Button  variant="outline" _hover={{ color: "gold" }}>
+        <HStack as="nav" spacing={4} display={displayValue}>
+          <Link to="/">
+            <Button variant="outline" _hover={{ color: "gold" }}>
               Home
             </Button>
-            </Link>
-          <Link to="/services"><Button  variant="outline" _hover={{ color: "gold" }}>
+          </Link>
+          <Link to="/services">
+            <Button variant="outline" _hover={{ color: "gold" }}>
               Services
-            </Button></Link>
+            </Button>
+          </Link>
           <Link to="/about">
-            <Button  variant="outline" _hover={{ color: "gold" }}>
+            <Button variant="outline" _hover={{ color: "gold" }}>
               About
             </Button>
-            </Link>
-          <Link to="/skills"><Button  variant="outline" _hover={{ color: "gold" }}>
+          </Link>
+          <Link to="/skills">
+            <Button variant="outline" _hover={{ color: "gold" }}>
               Skills
-            </Button></Link>
-          <Link to="/projects"><Button  variant='outline' _hover={{ color: "gold" }}>
+            </Button>
+          </Link>
+          <Link to="/projects">
+            <Button variant="outline" _hover={{ color: "gold" }}>
               Projects
-            </Button></Link>
-          <Link to="/contactus"><Button  variant="outline" _hover={{ color: "gold" }}>
+            </Button>
+          </Link>
+          <Link to="/contactus">
+            <Button variant="outline" _hover={{ color: "gold" }}>
               Contact Me
-            </Button></Link>
-            <ColorModeSwitch/>
+            </Button>
+          </Link>
+          <ColorModeSwitch />
         </HStack>
       </Flex>
       {/* Drawer for smaller screens */}
@@ -107,10 +119,9 @@ const Navbar = () => {
                 <Link to="/contactus" onClick={closeDrawer}>
                   Contact me
                 </Link>
-                <Button colorScheme={'orange'} onClick={closeDrawer}>
-                <ColorModeSwitch/>
+                <Button colorScheme={"orange"} onClick={closeDrawer}>
+                  <ColorModeSwitch />
                 </Button>
-                
               </VStack>
             </DrawerBody>
           </DrawerContent>
