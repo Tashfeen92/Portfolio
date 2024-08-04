@@ -5,31 +5,34 @@ import theme from "../theme";
 
 const skillLevels = [
   { skill: "Ruby", level: "expert" },
-  { skill: "Ruby on Rails", level: "medium" },
-  { skill: "ReactJs", level: "medium" },
-  { skill: "Js", level: "expert" },
-  { skill: "c++", level: "expert" },
-  { skill: "Ts", level: "expert" },
-  { skill: "others", level: "medium" },
-  { skill: "Node", level: "expert" },
-  { skill: "Java", level: "medium" },
-  { skill: "React", level: "medium" },
-  { skill: "Js", level: "expert" },
-  { skill: "c++", level: "expert" },
-  { skill: "Ts", level: "expert" },
-  { skill: "others", level: "medium" },
+  { skill: "Ruby on Rails", level: "expert" },
+  { skill: "Embedded Ruby", level: "above_average" },
+  { skill: "RESTful API", level: "expert" },
+  { skill: "API Testing", level: "above_average" },
+  { skill: "Hotwire", level: "average" },
+  { skill: "ReactJs", level: "expert" },
+  { skill: "Redux", level: "expert" },
+  { skill: "NodeJS", level: "above_average" },
+  { skill: "ExpresJS", level: "above_average" },
+  { skill: "jQuery", level: "average" },
+  { skill: "SQL", level: "expert" },
+  { skill: "MongoDB", level: "above_average" },
 ];
 
 const getSkillLevelHeight = (level: any) => {
   switch (level) {
     case "beginner":
-      return 1; // Smallest height
-    case "medium":
-      return 2; // Medium height
+      return 1;
+    case "below_average":
+        return 1.5;
+    case "average":
+      return 2;
+    case "above_average":
+        return 2.5;
     case "expert":
-      return 3; // Tallest height
+      return 3;
     default:
-      return 2; // Default medium height
+      return 2;
   }
 };
 
