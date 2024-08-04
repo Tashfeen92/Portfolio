@@ -3,18 +3,20 @@ import {
   Heading,
   HStack,
   Text,
+  Link,
   VStack,
   useBreakpointValue,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { BsPhone, BsWhatsapp } from "react-icons/bs";
-import { SiGmail } from "react-icons/si";
+import { BsWhatsapp, BsLinkedin } from "react-icons/bs";
 import {
-  TiSocialInstagramCircular,
-  TiSocialFacebookCircular,
-  TiSocialGithubCircular,
-  TiSocialLinkedinCircular,
-} from "react-icons/ti";
+  SiGmail,
+  SiGithub,
+  SiLinkedin,
+  SiFiverr,
+  SiUpwork,
+  SiMedium,
+} from "react-icons/si";
 
 const Footer = () => {
   const alignValue = useBreakpointValue({ base: "center", md: "flex-start" });
@@ -35,51 +37,62 @@ const Footer = () => {
           <Heading children="All Rights Reserved" color="white" />
           <Heading
             size="sm"
-            children="Saeed Anwar"
+            children="Muhamad Hammad Tashfeen"
             color="gold"
             fontFamily="body"
           />
         </VStack>
         <VStack width={["full", "auto"]} alignItems={["center", "flex-start"]}>
           <HStack align="center">
-            <BsPhone color="white" />
+            <BsWhatsapp color="white" />
             <Text marginTop={"4"} fontSize="sm" color="white" ml={2}>
-              03251746179
+              +92 316 4983858
             </Text>
           </HStack>
           <HStack align="center">
             <SiGmail color="white" />
-            <Text marginTop={"3"} fontSize="sm" color="white" ml={2}>
-              royxaeedanwarofficial@gmail.com
+            <Text marginTop={"4"} fontSize="sm" color="white" ml={2}>
+              tashfeenproduction92@gmail.com
             </Text>
           </HStack>
           <HStack align="center">
-            <BsWhatsapp color="white" />
-            <Text marginTop={"3"} fontSize="sm" color="white" ml={2}>
-              03174240437
-            </Text>
+            <BsLinkedin color="white" />
+            <Link
+              href="https://www.linkedin.com/in/muhammad-tashfeen-717777180"
+              isExternal
+            >
+              <Text marginTop={"5"} fontSize="sm" color="white" ml={2}>
+                https://www.linkedin.com/in/muhammad-tashfeen-717777180
+              </Text>
+            </Link>
           </HStack>
         </VStack>
         <HStack
           spacing={["2", "10"]}
           color="white"
-          fontSize={"40"}
+          fontSize={"25"}
           justifyContent="center"
         >
-          <a href="https://www.facebook.com/roy.saeed.58" target="_blank">
-            <TiSocialFacebookCircular />
+          <a href="https://github.com/tashfeen92" target="_blank">
+            <SiGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/saeed-anwar-b15a40184/"
+            href="https://www.linkedin.com/in/muhammad-tashfeen-717777180"
             target="_blank"
           >
-            <TiSocialLinkedinCircular />
+            <SiLinkedin />
           </a>
-          <a href="https://github.com/xaeedcntr" target="_blank">
-            <TiSocialGithubCircular />
+          <a href="https://www.fiverr.com/tashfeen92" target="_blank">
+            <SiFiverr />
           </a>
-          <a href="https://www.instagram.com/roy.xaeed_anwar" target="_blank">
-            <TiSocialInstagramCircular />
+          <a
+            href="https://www.upwork.com/freelancers/~01f8a1d46b82284c3f"
+            target="_blank"
+          >
+            <SiUpwork />
+          </a>
+          <a href="https://medium.com/@muhammadtashfeen92" target="_blank">
+            <SiMedium />
           </a>
         </HStack>
       </SimpleGrid>
