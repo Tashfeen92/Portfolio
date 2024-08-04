@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Link,
   Card,
   CardBody,
   HStack,
@@ -8,6 +9,7 @@ import {
   SimpleGrid,
   Text,
   useColorModeValue,
+  Flex,
 } from "@chakra-ui/react";
 import { BsRocket } from "react-icons/bs";
 import { FloatingLabel, Form, FormControl } from "react-bootstrap";
@@ -19,7 +21,7 @@ const Contact = () => {
     theme.formbackground.light,
     theme.formbackground.dark
   );
-  const [state, handleSubmit] = useForm("xaygeqor");
+  const [state, handleSubmit] = useForm("xldrbzpp");
   if (state.succeeded) {
     return (
       <Box>
@@ -46,21 +48,30 @@ const Contact = () => {
             <Heading>Tell me about your inovative idea</Heading>
             <br></br>
             <HStack>
-              <Text>Start your inovative Journey with me</Text>
+              <Text marginTop="14px">Start your inovative Journey with me</Text>
               <BsRocket style={{ color: "red" }} />
             </HStack>
             <br></br>
-            <Button bgGradient={"linear(to-r, grey, orange)"}>
-              <a
-                href="https://www.instagram.com/roy.xaeed_anwar"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Follow me
-              </a>
-            </Button>
+            <Link
+              href="https://www.linkedin.com/in/muhammad-tashfeen-717777180"
+              isExternal
+              display="inline-block"
+              px={4}
+              py={2}
+              borderRadius="md"
+              fontWeight="semibold"
+              variant="outline"
+              bgGradient="linear(to-r, grey, orange)"
+              _hover={{ 
+                textDecoration: "none", 
+                bg: "pink", 
+                color: "white" 
+              }}
+            >
+              Follow me
+            </Link>
           </Box>
-          <Box padding={5} margin={"8"} alignContent={"center"} marginTop={25}>
+          <Box padding={5} margin={"8"} alignContent={"center"} marginTop={25} marginBottom={250}>
             <Card
               borderRadius={"30px"}
               border={"2px solid gold"}
@@ -102,23 +113,28 @@ const Contact = () => {
           <Heading>Tell me about your inovative idea</Heading>
           <br></br>
           <HStack>
-            <Text>Start your inovative Journey with me</Text>
+            <Text marginTop="14px">Start your inovative Journey with me</Text>
             <BsRocket style={{ color: "red" }} />
           </HStack>
           <br></br>
-          <Button
-            _hover={{ backgroundColor: "pink", color: "white" }}
-            variant={"outline"}
-            bgGradient={"linear(to-r, grey, orange)"}
+          <Link
+            href="https://www.linkedin.com/in/muhammad-tashfeen-717777180"
+            isExternal
+            display="inline-block"
+            px={4}
+            py={2}
+            borderRadius="md"
+            fontWeight="semibold"
+            variant="outline"
+            bgGradient="linear(to-r, grey, orange)"
+            _hover={{ 
+              textDecoration: "none", 
+              bg: "pink", 
+              color: "white" 
+            }}
           >
-            <a
-              href="https://www.instagram.com/roy.xaeed_anwar"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Follow me
-            </a>
-          </Button>
+            Follow me
+          </Link>
         </Box>
         <Box padding={5} margin={"8"} alignContent={"center"} marginTop={25}>
           <Card
