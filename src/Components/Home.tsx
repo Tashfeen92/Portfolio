@@ -11,13 +11,13 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import {
-  BsInstagram,
   BsLinkedin,
   BsGithub,
   BsGoogle,
-  BsMailbox,
+  BsMedium,
 } from "react-icons/bs";
-import { Link } from "react-router-dom"; // Import Link
+import { TbBrandUpwork, TbBrandFiverr } from "react-icons/tb";
+import { Link } from "react-router-dom";
 import img from "../assets/Developer.png";
 import { about } from "../assets/txts";
 import PieChart from "./chart";
@@ -51,23 +51,10 @@ const Home = () => {
             marginBottom={8}
             spacing={6}
           >
-            <Box marginTop={25} padding={10}>
+            <Box marginTop={7} padding={10}>
               <HStack>
                 <a
-                  href="https://www.instagram.com/roy.xaeed_anwar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Box border={bdrcolor} borderRadius="20px" boxSize={"40px"}>
-                    {" "}
-                    <BsInstagram
-                      color={icolor}
-                      style={{ margin: "auto", marginTop: "9px" }}
-                    />
-                  </Box>
-                </a>
-                <a
-                  href="https://github.com/xaeedcntr"
+                  href="https://github.com/tashfeen92"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -79,22 +66,8 @@ const Home = () => {
                     />
                   </Box>
                 </a>
-                <Box
-                  border={bdrcolor}
-                  borderRadius="20px"
-                  boxSize={"40px"}
-                  onClick={() =>
-                    handleMailTo("royxaeedanwarofficial@gmail.com")
-                  }
-                  style={{ cursor: "pointer" }}
-                >
-                  <BsGoogle
-                    color={icolor}
-                    style={{ margin: "auto", marginTop: "9px" }}
-                  />
-                </Box>
                 <a
-                  href="https://www.linkedin.com/in/saeed-anwar-b15a40184/"
+                  href="https://www.linkedin.com/in/muhammad-tashfeen-717777180"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -111,18 +84,57 @@ const Home = () => {
                   borderRadius="20px"
                   boxSize={"40px"}
                   onClick={() =>
-                    handleMailTo("saeedanwar3344bsseseca@hotmail.com")
+                    handleMailTo("tashfeenproduction92@gmail.com")
                   }
                   style={{ cursor: "pointer" }}
                 >
-                  <BsMailbox
+                  <BsGoogle
                     color={icolor}
                     style={{ margin: "auto", marginTop: "9px" }}
                   />
                 </Box>
+                <a
+                  href="https://www.fiverr.com/tashfeen92"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Box border={bdrcolor} borderRadius="20px" boxSize={"40px"}>
+                    {" "}
+                    <TbBrandFiverr
+                      color={icolor}
+                      style={{ margin: "auto", marginTop: "9px" }}
+                    />
+                  </Box>
+                </a>
+                <a
+                  href="https://www.upwork.com/freelancers/~01f8a1d46b82284c3f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Box border={bdrcolor} borderRadius="20px" boxSize={"40px"}>
+                    {" "}
+                    <TbBrandUpwork
+                      color={icolor}
+                      style={{ margin: "auto", marginTop: "9px" }}
+                    />
+                  </Box>
+                </a>
+                <a
+                  href="https://medium.com/@muhammadtashfeen92"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Box border={bdrcolor} borderRadius="20px" boxSize={"40px"}>
+                    {" "}
+                    <BsMedium
+                      color={icolor}
+                      style={{ margin: "auto", marginTop: "9px" }}
+                    />
+                  </Box>
+                </a>
               </HStack>
               <br></br>
-              <Heading>Hi I'm Saeed Anwar</Heading>
+              <Heading>Hi I'm Muhammad Hammad Tashfeen</Heading>
               <br></br>
               <Text>{about}</Text>
               <br></br>
@@ -132,7 +144,7 @@ const Home = () => {
                 bgGradient={"linear(to-r, grey, orange)"}
               >
                 <a
-                  href="https://www.instagram.com/roy.xaeed_anwar"
+                  href="https://www.linkedin.com/in/muhammad-tashfeen-717777180"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -172,8 +184,8 @@ const Home = () => {
                 <Heading>Projects</Heading>
                 <Heading>10+</Heading>
                 <Text>
-                  I have Developed Different Projects in different technologies
-                  including web and android
+                  I have developed multiple projects using a variety of
+                  technologies, including Ruby on Rails, ReactJS and SQL.
                 </Text>
                 <Button color={icolor} variant={"outline"}>
                   <Link to="/projects">See All Projects</Link>
@@ -200,9 +212,11 @@ const Home = () => {
             >
               <CardBody>
                 <PieChartS />
-                <Button color={icolor} variant={"outline"}>
-                  <Link to="/skills">See All Skills</Link>
-                </Button>
+                <Link to="/skills">
+                  <Button color={icolor} variant={"outline"}>
+                    See All Skills
+                  </Button>
+                </Link>
               </CardBody>
             </Card>
           </SimpleGrid>

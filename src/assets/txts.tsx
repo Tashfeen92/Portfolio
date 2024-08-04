@@ -1,5 +1,7 @@
 export const service:string='I am a versatile full stack developer skilled in crafting robust web applications with the MERN stack. Additionally, I excel in building efficient mobile apps using Java and Android Studio, ensuring seamless experiences across platforms.'
-export const about :string='I am Professional Full stack developer who can develop web and mobile base applications for you on your demand'
+
+export const about :string='I am a professional Full Stack Developer with expertise in Ruby on Rails, Embedded Ruby, ReactJS, Node.js, Express.js, SQL, and NoSQL databases. I specialize in creating dynamic and scalable web applications across various industries. My skills include front-end and back-end development, ensuring high-quality and efficient solutions. I am dedicated to continuous learning and delivering innovative, client-focused applications that drive business success.'
+
 export const mern:string ='Expert in MERN stack development, I create dynamic web apps with React, HTML, and CSS, delivering user-centric interfaces and seamless functionality.'
 
 export const android :string='Proficient Android developer using Java and Android Studio, crafting impactful mobile applications that resonate with user needs.'
@@ -35,10 +37,17 @@ export const MongoDB:string ='My experience with MongoDB, a NoSQL database, enab
 export const SQL:string=' Proficient in SQL, I can design and optimize relational databases. Whether it is creating complex queries or ensuring data integrity through normalization, I have the skills to manage data effectively.'
 
 export const Cplus:string= 'I am well-versed in C++, a versatile programming language used for systems development, game development, and more. My knowledge allows me to tackle performance-critical tasks and implement efficient algorithms.'
+
 export const Android_Studio:string= 'I have honed my skills in Android Studio, making me capable of developing native Android applications. From UI design to app functionality, I can create engaging experiences for Android users.'
+
 export const Java:string= 'My proficiency in Java enables me to develop cross-platform applications, server applications, and more. I can leverage Java object-oriented principles to create robust and maintainable codebases.'
+
 export const xml:string= 'I am skilled in working with XML, a markup language used for data representation. Whether it is configuring app settings or structuring data, I can handle XML effectively.'
+
 export const GitHub:string= 'I am adept at using GitHub for version control and collaboration. I understand branching strategies, pull requests, and code reviews, ensuring a smooth and organized development workflow.'
+
 export const TypeScript:string=' My knowledge of TypeScript enhances my JavaScript projects by providing static typing and improved code readability. It is a valuable tool for maintaining code quality and preventing errors.'
+
 export const projects:string='Explore my diverse range of projects that showcase my expertise as a MERN Stack developer, where I have crafted dynamic web applications with seamless user experiences. Additionally, delve into my Android app creations, highlighting my proficiency in building innovative and user-friendly mobile solutions'
+
 export const dev:string='I am proud to announce my completion of the MERN Stack certification from Contour Software House, a globally recognized industry leader. With unwavering dedication, I have honed my skills at one of the world\'s top software houses, solidifying my expertise in full-stack development using MongoDB, Express.js, React, and Node.js.'
