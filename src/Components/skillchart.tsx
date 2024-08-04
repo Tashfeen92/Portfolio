@@ -4,6 +4,13 @@ import { useColorModeValue } from "@chakra-ui/react";
 import theme from "../theme";
 
 const skillLevels = [
+  { skill: "Ruby", level: "expert" },
+  { skill: "Ruby on Rails", level: "medium" },
+  { skill: "ReactJs", level: "medium" },
+  { skill: "Js", level: "expert" },
+  { skill: "c++", level: "expert" },
+  { skill: "Ts", level: "expert" },
+  { skill: "others", level: "medium" },
   { skill: "Node", level: "expert" },
   { skill: "Java", level: "medium" },
   { skill: "React", level: "medium" },

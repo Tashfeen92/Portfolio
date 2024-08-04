@@ -46,12 +46,15 @@ const PieChart: React.FC = () => {
               show: false,
             },
             data: [
-              { value: 51, name: "MERN" },
-              { value: 32, name: "Android" },
-              { value: 17, name: "Others" },
+              { value: 37, name: "Ruby on Rails" },
+              { value: 23, name: "ReactJs" },
+              { value: 9, name: "NodeJs" },
+              { value: 16, name: "SQL" },
+              { value: 9, name: "C++" },
+              { value: 6, name: "Others" },
             ],
             //@ts-ignore
-            color: ["#9318cc", "#ff9800", "#ff69b4"], // Blue, Orange, Pink
+            color: ["#9369cc", "#dd77aa", "orange", "#ffcc00", "#00bb00", "#997700"],
             itemStyle: {
               emphasis: {
                 shadowBlur: 10,
