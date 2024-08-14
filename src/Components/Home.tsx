@@ -140,16 +140,14 @@ const Home = () => {
               <br></br>
               <Button
                 _hover={{ backgroundColor: "pink", color: "white" }}
-                variant={"outline"}
-                bgGradient={"linear(to-r, grey, orange)"}
+                variant="outline"
+                bgGradient="linear(to-r, grey, orange)"
+                as="a"
+                href="https://www.linkedin.com/in/muhammad-tashfeen-717777180"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <a
-                  href="https://www.linkedin.com/in/muhammad-tashfeen-717777180"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Follow me
-                </a>
+                Follow me
               </Button>
             </Box>
             <Box padding={5}>
