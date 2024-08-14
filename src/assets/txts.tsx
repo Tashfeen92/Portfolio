@@ -14,7 +14,7 @@ export const research:string='Skilled in researching emerging web technologies a
 
 export const presentation:string='Delivering impactful presentations that effectively communicate complex technical concepts, I combine compelling visuals with clear content for maximum audience engagement.'
 
-export const aboutme:string=`👋 Greetings! I am saeed. I graduated with top-notch A+ grades, laying a solid foundation for my career.
+export const aboutme:string=`👋 Greetings! I am muhammad hammmad tashfeen. I graduated with top-notch A+ grades, laying a solid foundation for my career.
 
 🚀 As a professional developer, I thrive on the excitement of creating exceptional web applications using the dynamic MERN stack. My ability to seamlessly blend MongoDB, Express, React, and Node.js allows me to craft solutions that are not only functional but also visually captivating and user-centric. Beyond the virtual realm, I have ventured into the realm of Android applications, harnessing the power of Java, XML, and Android to craft mobile experiences that leave a lasting impact.
 

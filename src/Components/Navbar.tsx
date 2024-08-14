@@ -66,11 +66,6 @@ const Navbar = () => {
               Home
             </Button>
           </Link>
-          <Link to="/services">
-            <Button variant="outline" _hover={{ color: "gold" }}>
-              Services
-            </Button>
-          </Link>
           <Link to="/about">
             <Button variant="outline" _hover={{ color: "gold" }}>
               About
@@ -79,6 +74,11 @@ const Navbar = () => {
           <Link to="/skills">
             <Button variant="outline" _hover={{ color: "gold" }}>
               Skills
+            </Button>
+          </Link>
+          <Link to="/services">
+            <Button variant="outline" _hover={{ color: "gold" }}>
+              Services
             </Button>
           </Link>
           <Link to="/projects">
