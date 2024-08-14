@@ -8,27 +8,42 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import {
-  Android_Studio,
-  Cplus,
-  Express,
-  GitHub,
-  Java,
-  JavaScript,
-  MongoDB,
-  Node,
-  React,
-  SQL,
-  TypeScript,
   skillstxt,
-  xml,
+  Ruby,
+  Rails,
+  Node,
+  Express,
+  RestfulApi,
+  ApiTesting,
+  SQL,
+  MongoDB,
+  JavaScript,
+  JQuery,
+  React,
+  Redux,
+  Hotwire,
+  EmbeddedRuby,
+  GitHub,
+  Cplus,
 } from "../assets/txts";
-import { SiTypescript, SiCplusplus, SiExpress } from "react-icons/si";
+import {
+  SiCplusplus,
+  SiExpress,
+  SiRubyonrails,
+  SiInsomnia,
+  SiPostman,
+  SiRedux,
+  SiJquery,
+  SiRuby,
+} from "react-icons/si";
 import { DiReact, DiMongodb, DiJavascript } from "react-icons/di";
+import { FaGithubSquare } from "react-icons/fa";
+import { BsFiletypeSql } from "react-icons/bs";
+import { GrTurbolinux } from "react-icons/gr";
 import { IoLogoNodejs } from "react-icons/io";
-import { AiOutlineAndroid } from "react-icons/ai";
+import { DiRuby } from "react-icons/di";
 import theme from "../theme";
-import { BsFiletypeSql, BsFiletypeXml } from "react-icons/bs";
-import { FaGithubSquare, FaJava } from "react-icons/fa";
+
 const Skills = () => {
   const gradient = useColorModeValue(
     theme.gradients.light,
@@ -52,9 +67,31 @@ const Skills = () => {
       >
         <Card borderRadius={"30px"} boxShadow={"lg"} bgGradient={gradient}>
           <CardBody>
+            <SiRuby />
+            <SiRuby
+              size={40}
+              style={{ color: "red", margin: "auto", marginBottom: "30px" }}
+            />
+            <Heading fontSize={"15px"}>Ruby</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{Ruby}</Text>
+          </CardBody>
+        </Card>
+        <Card borderRadius={"30px"} boxShadow={"lg"} bgGradient={gradient}>
+          <CardBody>
+            <SiRubyonrails />
+            <SiRubyonrails size={70} style={{ color: "red", margin: "auto" }} />
+            <Heading fontSize={"15px"}>Ruby on Rails</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{Rails}</Text>
+          </CardBody>
+        </Card>
+        <Card borderRadius={"30px"} boxShadow={"lg"} bgGradient={gradient}>
+          <CardBody>
+            <IoLogoNodejs />
             <IoLogoNodejs
-              size={70}
-              style={{ color: "#1c8710", margin: "auto" }}
+              size={50}
+              style={{ color: "#1c8710", margin: "auto", marginBottom: "20px" }}
             />
             <Heading fontSize={"15px"}>Node Js</Heading>
             <br></br>
@@ -63,30 +100,45 @@ const Skills = () => {
         </Card>
         <Card borderRadius={"30px"} bgGradient={gradient}>
           <CardBody>
-            <DiReact size={50} style={{ color: "blue", margin: "auto" }} />
-            <br></br>
-            <Heading fontSize={"15px"}>React</Heading>
-            <br></br>
-            <Text textAlign={"left"}>{React}</Text>
-          </CardBody>
-        </Card>
-        <Card borderRadius={"30px"} bgGradient={gradient}>
-          <CardBody>
-            <AiOutlineAndroid
+            <SiExpress />
+            <SiExpress
               size={50}
-              style={{ color: "#2ded18", margin: "auto" }}
+              style={{ color: "#9e53db", margin: "auto", marginBottom: "20px" }}
             />
+            <Heading fontSize={"15px"}>Express</Heading>
             <br></br>
-            <Heading fontSize={"15px"}>Android</Heading>
-            <br></br>
-            <Text textAlign={"left"}>{Android_Studio}</Text>
+            <Text textAlign={"left"}>{Express}</Text>
           </CardBody>
         </Card>
-
+        <Card borderRadius={"30px"} boxShadow={"lg"} bgGradient={gradient}>
+          <CardBody>
+            <SiInsomnia />
+            <SiInsomnia
+              size={50}
+              style={{ color: "#123456", margin: "auto", marginBottom: "20px" }}
+            />
+            <Heading fontSize={"15px"}>RESTful API</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{RestfulApi}</Text>
+          </CardBody>
+        </Card>
         <Card borderRadius={"30px"} bgGradient={gradient}>
           <CardBody>
-            <BsFiletypeSql
+            <SiPostman />
+            <SiPostman
               size={50}
+              style={{ color: "#ff0000", margin: "auto", marginBottom: "20px" }}
+            />
+            <Heading fontSize={"15px"}>Api Testing</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{ApiTesting}</Text>
+          </CardBody>
+        </Card>
+        <Card borderRadius={"30px"} bgGradient={gradient}>
+          <CardBody>
+            <BsFiletypeSql />
+            <BsFiletypeSql
+              size={45}
               style={{ color: "#db4914", margin: "auto" }}
             />
             <br></br>
@@ -97,8 +149,11 @@ const Skills = () => {
         </Card>
         <Card borderRadius={"30px"} bgGradient={gradient}>
           <CardBody>
-            <DiMongodb size={50} style={{ color: "green", margin: "auto" }} />
-            <br></br>
+            <DiMongodb />
+            <DiMongodb
+              size={50}
+              style={{ color: "green", margin: "auto", marginBottom: "20px" }}
+            />
             <Heading fontSize={"15px"}>Mongo DB</Heading>
             <br></br>
             <Text textAlign={"left"}>{MongoDB}</Text>
@@ -106,6 +161,79 @@ const Skills = () => {
         </Card>
         <Card borderRadius={"30px"} bgGradient={gradient}>
           <CardBody>
+            <DiJavascript />
+            <DiJavascript size={50} style={{ color: "gold", margin: "auto" }} />
+            <br></br>
+            <Heading fontSize={"15px"}>Java Script</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{JavaScript}</Text>
+          </CardBody>
+        </Card>
+        <Card borderRadius={"30px"} bgGradient={gradient}>
+          <CardBody>
+            <SiJquery />
+            <SiJquery
+              size={40}
+              style={{ color: "#0000cc", margin: "auto", marginBottom: "10px" }}
+            />
+            <br></br>
+            <Heading fontSize={"15px"}>JQuery</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{JQuery}</Text>
+          </CardBody>
+        </Card>
+        <Card borderRadius={"30px"} bgGradient={gradient}>
+          <CardBody>
+            <DiReact />
+            <DiReact
+              size={50}
+              style={{ color: "#00bbff", margin: "auto", marginBottom: "20px" }}
+            />
+            <Heading fontSize={"15px"}>React Js</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{React}</Text>
+          </CardBody>
+        </Card>
+        <Card borderRadius={"30px"} bgGradient={gradient}>
+          <CardBody>
+            <SiRedux />
+            <SiRedux
+              size={50}
+              style={{ color: "purple", margin: "auto", marginBottom: "20px" }}
+            />
+            <Heading fontSize={"15px"}>Redux</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{Redux}</Text>
+          </CardBody>
+        </Card>
+        <Card borderRadius={"30px"} bgGradient={gradient}>
+          <CardBody>
+            <GrTurbolinux />
+            <GrTurbolinux
+              size={50}
+              style={{ color: "#4d4644", margin: "auto" }}
+            />
+            <br></br>
+            <Heading fontSize={"15px"}>Hotwire</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{Hotwire}</Text>
+          </CardBody>
+        </Card>
+        <Card borderRadius={"30px"} boxShadow={"lg"} bgGradient={gradient}>
+          <CardBody>
+            <DiRuby />
+            <DiRuby
+              size={50}
+              style={{ color: "red", margin: "auto", marginBottom: "20px" }}
+            />
+            <Heading fontSize={"15px"}>Embedded Ruby</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{EmbeddedRuby}</Text>
+          </CardBody>
+        </Card>
+        <Card borderRadius={"30px"} bgGradient={gradient}>
+          <CardBody>
+            <FaGithubSquare />
             <FaGithubSquare
               size={50}
               style={{ color: "#4d4644", margin: "auto" }}
@@ -116,64 +244,14 @@ const Skills = () => {
             <Text textAlign={"left"}>{GitHub}</Text>
           </CardBody>
         </Card>
-
         <Card borderRadius={"30px"} bgGradient={gradient}>
           <CardBody>
-            <FaJava size={50} style={{ color: "#3f54a1", margin: "auto" }} />
-            <br></br>
-            <Heading fontSize={"15px"}>Java</Heading>
-            <br></br>
-            <Text textAlign={"left"}>{Java}</Text>
-          </CardBody>
-        </Card>
-        <Card borderRadius={"30px"} bgGradient={gradient}>
-          <CardBody>
-            <DiJavascript size={50} style={{ color: "gold", margin: "auto" }} />
-            <br></br>
-            <Heading fontSize={"15px"}>Java Script</Heading>
-            <br></br>
-            <Text textAlign={"left"}>{JavaScript}</Text>
-          </CardBody>
-        </Card>
-        <Card borderRadius={"30px"} bgGradient={gradient}>
-          <CardBody>
-            <SiTypescript size={50} style={{ color: "blue", margin: "auto" }} />
-            <br></br>
-            <Heading fontSize={"15px"}>TypeScript</Heading>
-            <br></br>
-            <Text textAlign={"left"}>{TypeScript}</Text>
-          </CardBody>
-        </Card>
-
-        <Card borderRadius={"30px"} bgGradient={gradient}>
-          <CardBody>
-            <BsFiletypeXml
-              size={50}
-              style={{ color: "orange", margin: "auto" }}
-            />
-            <br></br>
-            <Heading fontSize={"15px"}>XML</Heading>
-            <br></br>
-            <Text textAlign={"left"}>{xml}</Text>
-          </CardBody>
-        </Card>
-        <Card borderRadius={"30px"} bgGradient={gradient}>
-          <CardBody>
+            <SiCplusplus />
             <SiCplusplus size={50} style={{ color: "red", margin: "auto" }} />
             <br></br>
             <Heading fontSize={"15px"}>C++</Heading>
             <br></br>
             <Text textAlign={"left"}>{Cplus}</Text>
-          </CardBody>
-        </Card>
-        <Card borderRadius={"30px"} bgGradient={gradient}>
-          <CardBody>
-            <SiExpress size={50} style={{ color: "#9e53db", margin: "auto" }} />
-            <br></br>
-            <Heading fontSize={"15px"}>Express</Heading>
-            <br></br>
-
-            <Text textAlign={"left"}>{Express}</Text>
           </CardBody>
         </Card>
       </SimpleGrid>
