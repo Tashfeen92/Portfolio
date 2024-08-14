@@ -1,18 +1,18 @@
-export const service:string='I am a versatile full stack developer skilled in crafting robust web applications with the MERN stack. Additionally, I excel in building efficient mobile apps using Java and Android Studio, ensuring seamless experiences across platforms.'
+export const service:string='I am a seasoned full-stack developer with a deep-rooted expertise in crafting robust and scalable web applications using Ruby on Rails. My proficiency extends to leveraging the power of Node.js and React to deliver dynamic and engaging user experiences. With a solid foundation in SQL database management, I excel at architecting efficient data-driven systems. My passion lies in building innovative solutions that seamlessly integrate technology with business objectives.'
 
 export const about :string='I am a professional Full Stack Developer with expertise in Ruby on Rails, Embedded Ruby, ReactJS, Node.js, Express.js, SQL, and NoSQL databases. I specialize in creating dynamic and scalable web applications across various industries. My skills include front-end and back-end development, ensuring high-quality and efficient solutions. I am dedicated to continuous learning and delivering innovative, client-focused applications that drive business success.'
 
-export const mern:string ='Expert in MERN stack development, I create dynamic web apps with React, HTML, and CSS, delivering user-centric interfaces and seamless functionality.'
+export const development:string ='Build high-performance web applications using versatile technologies i.e Ruby on Rails, ReactJS, and Node.js, SQL, prioritizing user experience and clean code.'
 
 export const android :string='Proficient Android developer using Java and Android Studio, crafting impactful mobile applications that resonate with user needs.'
 
-export const design:string='Transforming ideas into visually captivating web designs, I specialize in React-based interfaces, ensuring intuitive user experiences with HTML and CSS.'
+export const design:string='Crafting exceptional web designs with React, HTML, CSS, Bootstrap, Embedded Ruby, and Tailwind CSS, delivering highly intuitive user experiences.'
 
-export const photography:string='Capturing moments with a creative eye, I offer photography services that immortalize memories with stunning visual storytelling.'
+export const database_development:string='Strong foundation in SQL database design and optimization coupled with expertise in NoSQL (MongoDB) for high-performance, flexible data solutions in complex environments.'
 
-export const research:string='Adept in research paper writing, I provide comprehensive academic support, from crafting original content to precise citation and thorough plagiarism removal.'
+export const research:string='Skilled in researching emerging web technologies and industry trends, I provide in-depth analysis and insights to inform strategic development decisions.'
 
-export const presentation:string='Crafting engaging presentations, my services ensure efficient and compelling communication, combining visuals and content for impactful delivery.'
+export const presentation:string='Delivering impactful presentations that effectively communicate complex technical concepts, I combine compelling visuals with clear content for maximum audience engagement.'
 
 export const aboutme:string=`👋 Greetings! I am saeed. I graduated with top-notch A+ grades, laying a solid foundation for my career.
 

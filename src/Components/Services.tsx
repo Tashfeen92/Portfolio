@@ -10,8 +10,8 @@ import {
 import {
   android,
   design,
-  mern,
-  photography,
+  development,
+  database_development,
   presentation,
   research,
   service,
@@ -20,9 +20,9 @@ import { DiCode } from "react-icons/di";
 import theme from "../theme";
 import { GiArchiveResearch } from "react-icons/gi";
 import { RiPresentationFill } from "react-icons/ri";
-import { FcCameraAddon } from "react-icons/fc";
 import { CgWebsite } from "react-icons/cg";
 import { SiAndroidstudio } from "react-icons/si";
+import { GiDatabase } from "react-icons/gi";
 
 const Services = () => {
   const gradient = useColorModeValue(
@@ -50,7 +50,7 @@ const Services = () => {
             <br></br>
             <Heading fontSize={"15px"}>Web Development</Heading>
             <br></br>
-            <Text textAlign={"left"}>{mern}</Text>
+            <Text textAlign={"left"}>{development}</Text>
           </CardBody>
         </Card>
         <Card bgGradient={gradient} borderRadius={"30px"}>
@@ -64,17 +64,16 @@ const Services = () => {
         </Card>
         <Card bgGradient={gradient} borderRadius={"30px"}>
           <CardBody>
-            <GiArchiveResearch
+            <GiDatabase 
               size={50}
-              style={{ color: "#e64d27", margin: "auto" }}
+              style={{ color: "#880000", margin: "auto" }} 
             />
             <br></br>
-            <Heading fontSize={"15px"}>Research</Heading>
+            <Heading fontSize={"15px"}>Database Development</Heading>
             <br></br>
-            <Text textAlign={"left"}>{research}</Text>
+            <Text textAlign={"left"}>{database_development}</Text>
           </CardBody>
         </Card>
-
         <Card bgGradient={gradient} borderRadius={"30px"}>
           <CardBody>
             <SiAndroidstudio
@@ -89,6 +88,18 @@ const Services = () => {
         </Card>
         <Card bgGradient={gradient} borderRadius={"30px"}>
           <CardBody>
+            <GiArchiveResearch
+              size={50}
+              style={{ color: "#e64d27", margin: "auto" }}
+            />
+            <br></br>
+            <Heading fontSize={"15px"}>Research</Heading>
+            <br></br>
+            <Text textAlign={"left"}>{research}</Text>
+          </CardBody>
+        </Card>
+        <Card bgGradient={gradient} borderRadius={"30px"}>
+          <CardBody>
             <RiPresentationFill
               size={50}
               style={{ color: "#f241bd", margin: "auto" }}
@@ -97,15 +108,6 @@ const Services = () => {
             <Heading fontSize={"15px"}>Presentations</Heading>
             <br></br>
             <Text textAlign={"left"}>{presentation}</Text>
-          </CardBody>
-        </Card>
-        <Card bgGradient={gradient} borderRadius={"30px"}>
-          <CardBody>
-            <FcCameraAddon size={50} style={{ margin: "auto" }} />
-            <br></br>
-            <Heading fontSize={"15px"}>Photography</Heading>
-            <br></br>
-            <Text textAlign={"left"}>{photography}</Text>
           </CardBody>
         </Card>
       </SimpleGrid>
