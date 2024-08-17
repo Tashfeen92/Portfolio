@@ -22,13 +22,6 @@ export const research: string =
 export const presentation: string =
   "Delivering impactful presentations that effectively communicate complex technical concepts, I combine compelling visuals with clear content for maximum audience engagement.";
 
-export const aboutme: string = `👋 Greetings! I am muhammad hammmad tashfeen. I graduated with top-notch A+ grades, laying a solid foundation for my career.
-
-🚀 As a professional developer, I thrive on the excitement of creating exceptional web applications using the dynamic MERN stack. My ability to seamlessly blend MongoDB, Express, React, and Node.js allows me to craft solutions that are not only functional but also visually captivating and user-centric. Beyond the virtual realm, I have ventured into the realm of Android applications, harnessing the power of Java, XML, and Android to craft mobile experiences that leave a lasting impact.
-
-📚 In addition to my technical prowess, I am a wordsmith at heart. My journey extends beyond lines of code to crafting plagiarism-free research articles that explore the frontiers of technology and its intersection with society.
-`;
-
 export const skillstxt: string =
   "As a dedicated and adaptable developer, I have acquired a diverse skill set that enables me to bring ideas to life through coding. With a strong foundation in programming and a keen eye for detail, I am able to craft efficient and user-centric applications. From front-end design to back-end logic, I enjoy every step of the development process.";
 
@@ -92,5 +85,24 @@ export const GitHub: string =
 export const projects: string =
   "Explore my diverse range of projects that showcase my expertise as a Ruby on Rails developer, where I have crafted dynamic web applications with React.js for seamless user experiences. Additionally, delve into my work with Node.js and SQL, highlighting my proficiency in building innovative and efficient web solutions.";
 
-export const dev: string =
-  "I am proud to announce my completion of the MERN Stack certification from Contour Software House, a globally recognized industry leader. With unwavering dedication, I have honed my skills at one of the world's top software houses, solidifying my expertise in full-stack development using MongoDB, Express.js, React, and Node.js.";
+export const aboutme_1: string = `👋 Greetings! I am Muhammad Hammad Tashfeen, a distinguished developer with a wealth of relevant experience that underscores my expertise and dedication to the craft of software development.`;
+
+export const aboutme_2: string = `🚀 My professional journey is deeply anchored in the sophisticated realms of Ruby, where I leverage the elegance of Ruby on Rails to develop scalable, robust applications. With a keen mastery of Embedded Ruby (ERB), I intricately weave dynamic content into views, while Sidekiq enables efficient background processing, ensuring that the applications I build are both responsive and high-performing. Complementing this expertise, I excel in the art of creating cutting-edge web applications using the MERN stack—MongoDB, Express, React, and Node.js. My command of these technologies allows me to craft seamless, highly functional, and aesthetically pleasing digital experiences.`;
+
+export const aboutme_3: string = `🗄️ My expertise is further amplified by a deep understanding of SQL, where I navigate the complexities of MySQL and PostgreSQL with precision. This knowledge allows me to architect databases that are not only optimized for performance but also resilient and secure.`;
+
+export const aboutme_4: string = `💻 On the front-end, my skill set includes a profound knowledge of React.js, enhanced by the powerful state management capabilities of Redux. I also employ jQuery to add dynamic functionality, creating interfaces that are intuitive and engaging. My comprehensive approach ensures that every aspect of the user experience is meticulously crafted, from the back-end infrastructure to the front-end presentation.`;
+
+export const aboutme_5: string = `🎯 Driven by an insatiable curiosity and a relentless pursuit of excellence, I am committed to pushing the boundaries of innovation in every project I undertake. Whether it's developing sophisticated web applications, architecting complex databases, or contributing thought-provoking research, I bring a blend of technical mastery and creative insight to the table.`;
+
+export const dev_1: string =
+  "🎓 I'm thrilled to have earned my MERN Stack certification from Contour Software House, a globally recognized leader in software development. This program allowed me to master MongoDB, Express.js, React, and Node.js, equipping me to build robust, dynamic web applications.";
+
+export const dev_2: string =
+  "💼 At Contour Software House, I gained hands-on experience with real-world projects that showcased the MERN Stack's power. Among these is a fully functional E-commerce Application, where I implemented secure payment gateways and developed a user-friendly interface. I also built a User Details Application, focusing on efficient data management and intuitive user interaction.";
+
+export const dev_3: string =
+  "🔗 Another key project was a URL Shortening Application, where I used the MERN Stack to create a tool for efficiently managing and shortening URLs. These projects reinforced my full-stack expertise and demonstrated my ability to deliver innovative, high-quality solutions.";
+
+export const dev_4: string =
+  "🏆 Completing my certification at one of the world's top software houses has solidified my technical skills and boosted my confidence in tackling complex development challenges. I am now fully prepared to leverage the MERN Stack in creating cutting-edge applications that drive business success.";

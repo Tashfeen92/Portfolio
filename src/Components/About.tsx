@@ -7,15 +7,29 @@ import {
   Card,
   CardBody,
 } from "@chakra-ui/react";
-import { aboutme, dev } from "../assets/txts";
+import {
+  aboutme_1,
+  aboutme_2,
+  aboutme_3,
+  aboutme_4,
+  aboutme_5,
+  dev_1,
+  dev_2,
+  dev_3,
+  dev_4,
+} from "../assets/txts";
 import developer from "../assets/Developer.svg";
-import certificate from "../assets/certification.png";
+import certificate from "../assets/my_certification.png";
 import "../Styles/Image.css";
 
 const About = () => {
   return (
     <Box>
-      <Card margin={"50px"} borderRadius={"20px"} shadow={"dark-lg"}>
+      <Card
+        margin={"50px 60px 50px 60px"}
+        borderRadius={"20px"}
+        shadow={"dark-lg"}
+      >
         <CardBody>
           <Heading textAlign="center">About Me</Heading>
           <SimpleGrid
@@ -24,22 +38,18 @@ const About = () => {
             spacing={6}
             templateColumns={{
               base: "1fr",
-              lg: "1fr 45%",
+              lg: "1fr 0%",
             }}
           >
-            <Box
-              className="responsive-about"
-              alignContent={"center"}
-              marginTop={25}
-            >
+            <Box className="responsive-about" alignContent={"center"}>
               <br />
               <Text
                 fontSize={"25px"}
                 fontFamily={"cursive"}
                 textAlign="justify"
               >
-                I am a Software engineer who can develop what you have in your
-                mind
+                "I am a Software Engineer who can bring your ideas to life
+                through innovative development."
               </Text>
               <br />
               <Box
@@ -63,17 +73,23 @@ const About = () => {
                 }}
               >
                 <Text fontFamily={"mono"} textAlign="justify">
-                  {aboutme}
+                  {aboutme_1}
+                  <br />
+                  <br />
+                  {aboutme_2}
+                  <br />
+                  <br />
+                  {aboutme_3}
+                  <br />
+                  <br />
+                  {aboutme_4}
+                  <br />
+                  <br />
+                  {aboutme_5}
                 </Text>
               </Box>
               <br />
             </Box>
-            <Image
-              marginTop={"10"}
-              className="moveArrow"
-              alt="Image"
-              src={developer}
-            />
           </SimpleGrid>
         </CardBody>
       </Card>
@@ -82,27 +98,25 @@ const About = () => {
           backgroundColor: "rgba(255, 255, 255, .10)",
           backdropFilter: "blur(10px)",
         }}
-        margin={"60px"}
+        margin={"50px 60px 50px 60px"}
         borderRadius={"20px"}
         shadow={"dark-lg"}
-        border={"3px solid aqua"}
       >
         <CardBody>
           <Heading textAlign="center">Certification</Heading>
           <SimpleGrid
-            paddingBottom={"35px"}
             textAlign={"center"}
             columns={{ sm: 1, md: 1, lg: 2, xl: 2 }}
             spacing={6}
             templateColumns={{
               base: "1fr",
-              lg: "45% 1fr",
+              lg: "40% 1fr",
             }}
           >
             <Image
               border={"2px solid gold"}
               borderRadius={"20px"}
-              marginTop={"10"}
+              marginTop={"42"}
               className="moveArrow"
               alt="Image"
               src={certificate}
@@ -118,8 +132,8 @@ const About = () => {
                 fontFamily={"cursive"}
                 textAlign="justify"
               >
-                Here is my Certification of MERN development from contour
-                software house lahore
+                "Presenting my MERN Development Certification from Contour
+                Software House, Lahore."
               </Text>
               <br />
               <Box
@@ -143,7 +157,16 @@ const About = () => {
                 }}
               >
                 <Text fontFamily={"mono"} textAlign="justify">
-                  {dev}
+                  {dev_1}
+                  <br />
+                  <br />
+                  {dev_2}
+                  <br />
+                  <br />
+                  {dev_3}
+                  <br />
+                  <br />
+                  {dev_4}
                 </Text>
               </Box>
               <br />
