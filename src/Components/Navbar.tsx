@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { HamburgerIcon } from "@chakra-ui/icons"; // Import the hamburger icon
-import logo from "../assets/logo.png";
+import logo from "../assets/profile_logo.png";
 import ColorModeSwitch from "./colomodeswitcher";
 
 const Navbar = () => {
@@ -50,7 +50,7 @@ const Navbar = () => {
         px={[4, 8]}
         py={3}
       >
-        <Image src={logo} width="230px" />
+        <Image src={logo} width="280px" marginLeft="50px" />
         {/* Show the menu button on smaller screens */}
         <IconButton
           aria-label="Open menu"
