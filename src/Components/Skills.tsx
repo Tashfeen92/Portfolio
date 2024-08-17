@@ -37,11 +37,11 @@ import {
   SiRuby,
 } from "react-icons/si";
 import { DiReact, DiMongodb, DiJavascript } from "react-icons/di";
+import { PiFileSqlLight } from "react-icons/pi";
 import { FaGithubSquare } from "react-icons/fa";
-import { BsFiletypeSql } from "react-icons/bs";
 import { GrTurbolinux } from "react-icons/gr";
 import { IoLogoNodejs } from "react-icons/io";
-import { DiRuby } from "react-icons/di";
+
 import theme from "../theme";
 
 const Skills = () => {
@@ -70,7 +70,7 @@ const Skills = () => {
             <SiRuby />
             <SiRuby
               size={40}
-              style={{ color: "red", margin: "auto", marginBottom: "30px" }}
+              style={{ color: "#CC342D", margin: "auto", marginBottom: "30px" }}
             />
             <Heading fontSize={"15px"}>Ruby</Heading>
             <br></br>
@@ -80,7 +80,10 @@ const Skills = () => {
         <Card borderRadius={"30px"} boxShadow={"lg"} bgGradient={gradient}>
           <CardBody>
             <SiRubyonrails />
-            <SiRubyonrails size={70} style={{ color: "red", margin: "auto" }} />
+            <SiRubyonrails
+              size={70}
+              style={{ color: "CC0000", margin: "auto" }}
+            />
             <Heading fontSize={"15px"}>Ruby on Rails</Heading>
             <br></br>
             <Text textAlign={"left"}>{Rails}</Text>
@@ -91,7 +94,7 @@ const Skills = () => {
             <IoLogoNodejs />
             <IoLogoNodejs
               size={50}
-              style={{ color: "#1c8710", margin: "auto", marginBottom: "20px" }}
+              style={{ color: "#339933", margin: "auto", marginBottom: "20px" }}
             />
             <Heading fontSize={"15px"}>Node Js</Heading>
             <br></br>
@@ -103,7 +106,7 @@ const Skills = () => {
             <SiExpress />
             <SiExpress
               size={50}
-              style={{ color: "#9e53db", margin: "auto", marginBottom: "20px" }}
+              style={{ color: "#000000", margin: "auto", marginBottom: "20px" }}
             />
             <Heading fontSize={"15px"}>Express</Heading>
             <br></br>
@@ -115,7 +118,7 @@ const Skills = () => {
             <SiInsomnia />
             <SiInsomnia
               size={50}
-              style={{ color: "#123456", margin: "auto", marginBottom: "20px" }}
+              style={{ color: "#4000BF", margin: "auto", marginBottom: "20px" }}
             />
             <Heading fontSize={"15px"}>RESTful API</Heading>
             <br></br>
@@ -127,7 +130,7 @@ const Skills = () => {
             <SiPostman />
             <SiPostman
               size={50}
-              style={{ color: "#ff0000", margin: "auto", marginBottom: "20px" }}
+              style={{ color: "#FF6C37", margin: "auto", marginBottom: "20px" }}
             />
             <Heading fontSize={"15px"}>Api Testing</Heading>
             <br></br>
@@ -136,10 +139,10 @@ const Skills = () => {
         </Card>
         <Card borderRadius={"30px"} bgGradient={gradient}>
           <CardBody>
-            <BsFiletypeSql />
-            <BsFiletypeSql
+            <PiFileSqlLight />
+            <PiFileSqlLight
               size={45}
-              style={{ color: "#db4914", margin: "auto" }}
+              style={{ color: "#808080", margin: "auto" }}
             />
             <br></br>
             <Heading fontSize={"15px"}>SQL Database</Heading>
@@ -152,7 +155,7 @@ const Skills = () => {
             <DiMongodb />
             <DiMongodb
               size={50}
-              style={{ color: "green", margin: "auto", marginBottom: "20px" }}
+              style={{ color: "#47A248", margin: "auto", marginBottom: "20px" }}
             />
             <Heading fontSize={"15px"}>Mongo DB</Heading>
             <br></br>
@@ -162,7 +165,10 @@ const Skills = () => {
         <Card borderRadius={"30px"} bgGradient={gradient}>
           <CardBody>
             <DiJavascript />
-            <DiJavascript size={50} style={{ color: "gold", margin: "auto" }} />
+            <DiJavascript
+              size={50}
+              style={{ color: "#F7DF1E", margin: "auto" }}
+            />
             <br></br>
             <Heading fontSize={"15px"}>Java Script</Heading>
             <br></br>
@@ -174,7 +180,7 @@ const Skills = () => {
             <SiJquery />
             <SiJquery
               size={40}
-              style={{ color: "#0000cc", margin: "auto", marginBottom: "10px" }}
+              style={{ color: "#0769AD", margin: "auto", marginBottom: "10px" }}
             />
             <br></br>
             <Heading fontSize={"15px"}>JQuery</Heading>
@@ -187,7 +193,7 @@ const Skills = () => {
             <DiReact />
             <DiReact
               size={50}
-              style={{ color: "#00bbff", margin: "auto", marginBottom: "20px" }}
+              style={{ color: "#61DAFB", margin: "auto", marginBottom: "20px" }}
             />
             <Heading fontSize={"15px"}>React Js</Heading>
             <br></br>
@@ -199,7 +205,7 @@ const Skills = () => {
             <SiRedux />
             <SiRedux
               size={50}
-              style={{ color: "purple", margin: "auto", marginBottom: "20px" }}
+              style={{ color: "#764ABC", margin: "auto", marginBottom: "20px" }}
             />
             <Heading fontSize={"15px"}>Redux</Heading>
             <br></br>
@@ -211,7 +217,7 @@ const Skills = () => {
             <GrTurbolinux />
             <GrTurbolinux
               size={50}
-              style={{ color: "#4d4644", margin: "auto" }}
+              style={{ color: "#E34F26", margin: "auto" }}
             />
             <br></br>
             <Heading fontSize={"15px"}>Hotwire</Heading>
@@ -221,10 +227,10 @@ const Skills = () => {
         </Card>
         <Card borderRadius={"30px"} boxShadow={"lg"} bgGradient={gradient}>
           <CardBody>
-            <DiRuby />
-            <DiRuby
-              size={50}
-              style={{ color: "red", margin: "auto", marginBottom: "20px" }}
+            <SiRuby />
+            <SiRuby
+              size={40}
+              style={{ color: "#CC342D", margin: "auto", marginBottom: "30px" }}
             />
             <Heading fontSize={"15px"}>Embedded Ruby</Heading>
             <br></br>
@@ -236,7 +242,7 @@ const Skills = () => {
             <FaGithubSquare />
             <FaGithubSquare
               size={50}
-              style={{ color: "#4d4644", margin: "auto" }}
+              style={{ color: "#181717", margin: "auto" }}
             />
             <br></br>
             <Heading fontSize={"15px"}>GitHub</Heading>
@@ -247,7 +253,10 @@ const Skills = () => {
         <Card borderRadius={"30px"} bgGradient={gradient}>
           <CardBody>
             <SiCplusplus />
-            <SiCplusplus size={50} style={{ color: "red", margin: "auto" }} />
+            <SiCplusplus
+              size={50}
+              style={{ color: "#00599C", margin: "auto" }}
+            />
             <br></br>
             <Heading fontSize={"15px"}>C++</Heading>
             <br></br>

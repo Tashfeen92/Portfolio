@@ -90,7 +90,7 @@ export const GitHub: string =
   "I am adept at using GitHub for version control and collaboration. I understand branching strategies, pull requests, and code reviews, ensuring a smooth and organized development workflow.";
 
 export const projects: string =
-  "Explore my diverse range of projects that showcase my expertise as a MERN Stack developer, where I have crafted dynamic web applications with seamless user experiences. Additionally, delve into my Android app creations, highlighting my proficiency in building innovative and user-friendly mobile solutions";
+  "Explore my diverse range of projects that showcase my expertise as a Ruby on Rails developer, where I have crafted dynamic web applications with React.js for seamless user experiences. Additionally, delve into my work with Node.js and SQL, highlighting my proficiency in building innovative and efficient web solutions.";
 
 export const dev: string =
   "I am proud to announce my completion of the MERN Stack certification from Contour Software House, a globally recognized industry leader. With unwavering dedication, I have honed my skills at one of the world's top software houses, solidifying my expertise in full-stack development using MongoDB, Express.js, React, and Node.js.";

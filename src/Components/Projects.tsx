@@ -17,32 +17,23 @@ import {
   Tr,
   useColorModeValue,
 } from "@chakra-ui/react";
+import theme from "../theme";
 import { projects } from "../assets/txts";
 import {
-  DiAndroid,
-  DiBootstrap,
-  DiCss3,
-  DiHtml5,
-  DiJava,
-  DiMongodb,
-  DiMysql,
-  DiNodejs,
-  DiReact,
-  DiWebplatform,
-} from "react-icons/di";
-import {
   SiChakraui,
-  SiCsharp,
-  SiFirebase,
   SiMongodb,
-  SiPostman,
-  SiReacthookform,
   SiRedux,
   SiTypescript,
+  SiJavascript,
+  SiCplusplus,
+  SiRubyonrails,
+  SiExpress,
 } from "react-icons/si";
-import { BsFiletypeXml, BsGithub } from "react-icons/bs";
-import theme from "../theme";
+import { BsGithub } from "react-icons/bs";
+import { IoLogoNodejs } from "react-icons/io";
 import { AiTwotoneLock } from "react-icons/ai";
+import { PiFileSqlLight } from "react-icons/pi";
+import { DiBootstrap, DiReact, DiRuby } from "react-icons/di";
 
 const Projects = () => {
   const gradient = useColorModeValue(
@@ -81,68 +72,66 @@ const Projects = () => {
                 <Tbody>
                   <Tr>
                     <Td>2023</Td>
-                    <Td>Game-Hub</Td>
-                    <Td>Pie-Cyfer</Td>
+                    <Td>Digital Dreams E-Commerce Application</Td>
+                    <Td>Contour Software</Td>
                     <Td>
                       <HStack>
-                        <DiReact size={40} color="aqua" />
-                        <SiTypescript size={35} color="blue" />
-                        <SiChakraui size={35} color="aqua" />
-                        <DiCss3 size={35} color="orange" />
+                        <DiReact size={40} color="#61DAFB" />
+                        <SiRedux
+                          size={40}
+                          style={{ padding: "5px" }}
+                          color="#764ABC"
+                        />
+                        <IoLogoNodejs
+                          size={40}
+                          style={{ padding: "3px" }}
+                          color="#339933"
+                        />
+                        <SiMongodb
+                          size={40}
+                          style={{ padding: "4px" }}
+                          color="#47A248"
+                        />
                       </HStack>
                     </Td>
                     <Td>
-                      <Button variant={"outline"}>
-                        <HStack>
-                          <a
-                            href="https://github.com/xaeedcntr/Game-hub"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Click to Access
-                          </a>
-                          <BsGithub />
-                        </HStack>
-                      </Button>
+                      <a
+                        href="https://github.com/Tashfeen92/Digital_Dreams_E_Commerce"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none" }}
+                      >
+                        <Button variant={"outline"} width="175px">
+                          <HStack>
+                            <span>Click to Access</span>
+                            <BsGithub />
+                          </HStack>
+                        </Button>
+                      </a>
                     </Td>
                   </Tr>
                   <Tr>
-                    <Td>2023</Td>
-                    <Td>Todo List</Td>
-                    <Td>Pie-Cyfer</Td>
+                    <Td>2024</Td>
+                    <Td>Essentials</Td>
+                    <Td>Pie Cyfer</Td>
                     <Td>
                       <HStack>
-                        <DiReact size={40} color="aqua" />
-                        <SiTypescript size={35} color="blue" />
-                        <DiBootstrap size={35} color="aqua" />
-                        <SiRedux size={35} color="orange" />
-                      </HStack>
-                    </Td>
-                    <Td>
-                      <Button variant={"outline"}>
-                        <HStack>
-                          <a
-                            href="https://github.com/xaeedcntr/Todo-Project"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Click to Access
-                          </a>
-                          <BsGithub />
-                        </HStack>
-                      </Button>
-                    </Td>
-                  </Tr>
-                  <Tr>
-                    <Td>2023</Td>
-                    <Td>User-Registration</Td>
-                    <Td>Pie-Cyfer</Td>
-                    <Td>
-                      <HStack>
-                        <DiReact size={40} color="aqua" />
-                        <SiTypescript size={35} color="blue" />
-                        <SiReacthookform size={35} color="gold" />
-                        <DiBootstrap size={35} color="Aqua" />
+                        <DiRuby
+                          size={40}
+                          style={{ padding: "2px" }}
+                          color="#CC342D"
+                        />
+                        <SiRubyonrails size={40} color="#CC0000" />
+                        <SiCplusplus
+                          size={40}
+                          style={{ padding: "2px" }}
+                          color="#00599C"
+                        />
+                        <SiJavascript
+                          size={40}
+                          style={{ padding: "4px" }}
+                          color="#F7DF1E"
+                        />
                       </HStack>
                     </Td>
                     <Td>
@@ -151,161 +140,119 @@ const Projects = () => {
                         outlineColor={"red"}
                         padding={"5"}
                         variant={"outline"}
-                        width={"160px"}
+                        width={"170px"}
                       >
                         <AiTwotoneLock size={40} />
-                      </Button>
-                    </Td>
-                  </Tr>
-                  <Tr>
-                    <Td>2023</Td>
-                    <Td>User-Regsistraion</Td>
-                    <Td>Pie-Cyfer</Td>
-                    <Td>
-                      <HStack>
-                        <DiNodejs size={40} color="aqua" />
-                        <SiTypescript size={35} color="blue" />
-                        <SiMongodb size={35} color="green" />
-                        <SiPostman size={35} color="orange" />
-                      </HStack>
-                    </Td>
-                    <Td>
-                      <Button
-                        isDisabled
-                        outlineColor={"red"}
-                        padding={"5"}
-                        variant={"outline"}
-                        width={"160px"}
-                      >
-                        <AiTwotoneLock size={40} />
-                      </Button>
-                    </Td>
-                  </Tr>
-                  <Tr>
-                    <Td>2023</Td>
-                    <Td>CET-Portal</Td>
-                    <Td>Contour Software</Td>
-                    <Td>
-                      <HStack>
-                        <DiReact size={40} color="aqua" />
-                        <DiNodejs size={35} color="green" />
-                        <SiChakraui size={35} color="aqua" />
-                        <DiMongodb size={35} color="green" />
-                      </HStack>
-                    </Td>
-                    <Td>
-                      <Button variant={"outline"}>
-                        <HStack>
-                          <a
-                            href="https://github.com/xaeedcntr/CET-Portal"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Click to Access
-                          </a>
-                          <BsGithub />
-                        </HStack>
-                      </Button>
-                    </Td>
-                  </Tr>
-                  <Tr>
-                    <Td>2022</Td>
-                    <Td>Todo project</Td>
-                    <Td>Contour Software</Td>
-                    <Td>
-                      <HStack>
-                        <DiReact size={40} color="aqua" />
-                        <DiNodejs size={35} color="green" />
-                        <SiChakraui size={35} color="aqua" />
-                        <DiMongodb size={35} color="green" />
-                      </HStack>
-                    </Td>
-                    <Td>
-                      <Button variant={"outline"}>
-                        <HStack>
-                          <a
-                            href="https://github.com/xaeedcntr/mid-project"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Click to Access
-                          </a>
-                          <BsGithub />
-                        </HStack>
                       </Button>
                     </Td>
                   </Tr>
 
                   <Tr>
-                    <Td>2022</Td>
-                    <Td>Sports For Everyone</Td>
-                    <Td>LGU</Td>
+                    <Td>2023</Td>
+                    <Td>User Details Management System</Td>
+                    <Td>Contour Software</Td>
                     <Td>
                       <HStack>
-                        <DiAndroid size={40} color="green" />
-                        <SiFirebase size={35} color="orange" />
-                        <BsFiletypeXml size={35} color="blue" />
-                        <DiJava size={35} color="aqua" />
+                        <SiJavascript
+                          size={40}
+                          style={{ padding: "4px" }}
+                          color="#F7DF1E"
+                        />
+                        <DiReact size={40} color="#61DAFB" />
+                        <IoLogoNodejs
+                          size={40}
+                          style={{ padding: "3px" }}
+                          color="#339933"
+                        />
+                        <SiExpress
+                          size={40}
+                          style={{ padding: "4px" }}
+                          color="#000000"
+                        />
                       </HStack>
                     </Td>
                     <Td>
-                      <Button
-                        isDisabled
-                        outlineColor={"red"}
-                        padding={"5"}
-                        variant={"outline"}
-                        width={"160px"}
+                      <a
+                        href="https://github.com/Tashfeen92/User_Details_Application"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none" }}
                       >
-                        <AiTwotoneLock size={40} />
-                      </Button>
+                        <Button variant={"outline"} width="175px">
+                          <HStack>
+                            <span>Click to Access</span>
+                            <BsGithub />
+                          </HStack>
+                        </Button>
+                      </a>
                     </Td>
                   </Tr>
                   <Tr>
-                    <Td>2022</Td>
-                    <Td>Orange Store</Td>
-                    <Td>LGU</Td>
+                    <Td>2024</Td>
+                    <Td>Portfolio</Td>
+                    <Td>Pie Cyfer</Td>
                     <Td>
                       <HStack>
-                        <DiAndroid size={40} color="green" />
-                        <SiFirebase size={35} color="orange" />
-                        <BsFiletypeXml size={35} color="blue" />
-                        <DiJava size={35} color="aqua" />
+                        <SiTypescript
+                          size={40}
+                          style={{ padding: "5px" }}
+                          color="#3178C6"
+                        />
+                        <DiReact size={40} color="#61DAFB" />
+                        <SiChakraui
+                          size={40}
+                          style={{ padding: "5px" }}
+                          color="#319795"
+                        />
+                        <DiBootstrap size={40} color="#7952B3" />
                       </HStack>
                     </Td>
                     <Td>
-                      <Button
-                        isDisabled
-                        outlineColor={"red"}
-                        padding={"5"}
-                        variant={"outline"}
-                        width={"160px"}
+                      <a
+                        href="https://github.com/Tashfeen92/Portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none" }}
                       >
-                        <AiTwotoneLock size={40} />
-                      </Button>
+                        <Button variant={"outline"} width="175px">
+                          <HStack>
+                            <span>Click to Access</span>
+                            <BsGithub />
+                          </HStack>
+                        </Button>
+                      </a>
                     </Td>
                   </Tr>
                   <Tr>
-                    <Td>2021</Td>
-                    <Td>E Banking</Td>
-                    <Td>LGU</Td>
+                    <Td>2023</Td>
+                    <Td>URL Shortener</Td>
+                    <Td>Contour Software</Td>
                     <Td>
                       <HStack>
-                        <DiWebplatform size={40} color="green" />
-                        <DiMysql size={35} color="blue" />
-                        <SiCsharp size={35} color="blue" />
-                        <DiHtml5 size={35} color="aqua" />
+                        <SiJavascript
+                          size={40}
+                          style={{ padding: "4px" }}
+                          color="#F7DF1E"
+                        />
+                        <DiReact size={40} color="#61DAFB" />
+                        <SiRubyonrails size={40} color="#CC0000" />
+                        <PiFileSqlLight size={40} color="#000000" />
                       </HStack>
                     </Td>
                     <Td>
-                      <Button
-                        isDisabled
-                        outlineColor={"red"}
-                        padding={"5"}
-                        variant={"outline"}
-                        width={"160px"}
+                      <a
+                        href="https://github.com/Tashfeen92/URL_Shortener"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none" }}
                       >
-                        <AiTwotoneLock size={40} />
-                      </Button>
+                        <Button variant={"outline"} width="175px">
+                          <HStack>
+                            <span>Click to Access</span>
+                            <BsGithub />
+                          </HStack>
+                        </Button>
+                      </a>
                     </Td>
                   </Tr>
                 </Tbody>
