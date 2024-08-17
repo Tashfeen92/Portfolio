@@ -9,7 +9,6 @@ import {
   SimpleGrid,
   Text,
   useColorModeValue,
-  Flex,
 } from "@chakra-ui/react";
 import { BsRocket } from "react-icons/bs";
 import { FloatingLabel, Form, FormControl } from "react-bootstrap";
@@ -62,16 +61,22 @@ const Contact = () => {
               fontWeight="semibold"
               variant="outline"
               bgGradient="linear(to-r, grey, orange)"
-              _hover={{ 
-                textDecoration: "none", 
-                bg: "pink", 
-                color: "white" 
+              _hover={{
+                textDecoration: "none",
+                bg: "pink",
+                color: "white",
               }}
             >
               Follow me
             </Link>
           </Box>
-          <Box padding={5} margin={"8"} alignContent={"center"} marginTop={25} marginBottom={250}>
+          <Box
+            padding={5}
+            margin={"8"}
+            alignContent={"center"}
+            marginTop={25}
+            marginBottom={250}
+          >
             <Card
               borderRadius={"30px"}
               border={"2px solid gold"}
@@ -127,10 +132,10 @@ const Contact = () => {
             fontWeight="semibold"
             variant="outline"
             bgGradient="linear(to-r, grey, orange)"
-            _hover={{ 
-              textDecoration: "none", 
-              bg: "pink", 
-              color: "white" 
+            _hover={{
+              textDecoration: "none",
+              bg: "pink",
+              color: "white",
             }}
           >
             Follow me

@@ -18,7 +18,7 @@ const PieChart: React.FC = () => {
           trigger: "item",
         },
         legend: {
-          top: "5%",
+          top: "1%",
           left: "center",
           textStyle: {
             //@ts-ignore
