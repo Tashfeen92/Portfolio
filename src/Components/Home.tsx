@@ -180,7 +180,7 @@ const Home = () => {
               <CardBody>
                 <br></br>
                 <Heading>Projects</Heading>
-                <Heading>10+</Heading>
+                <Heading>5+</Heading>
                 <Text>
                   I have developed multiple projects using a variety of
                   technologies, including Ruby on Rails, ReactJS and SQL.

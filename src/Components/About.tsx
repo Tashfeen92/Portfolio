@@ -6,6 +6,9 @@ import {
   Image,
   Card,
   CardBody,
+  Button,
+  VStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import {
   aboutme_1,
@@ -18,14 +21,30 @@ import {
   dev_3,
   dev_4,
 } from "../assets/txts";
-import developer from "../assets/Developer.svg";
+import theme from "../theme";
+import { Link } from "react-router-dom";
+import PieChart from "./chart";
+import PieChartS from "./skillchart";
 import certificate from "../assets/my_certification.png";
 import "../Styles/Image.css";
 
 const About = () => {
+  const gradient = useColorModeValue(
+    theme.gradients.light,
+    theme.gradients.dark
+  );
+  const bdrcolor = useColorModeValue(
+    theme.bordercolors.light,
+    theme.bordercolors.dark
+  );
+  const icolor = useColorModeValue(
+    theme.iconcolors.light,
+    theme.iconcolors.dark
+  );
   return (
     <Box>
       <Card
+        bgGradient={gradient}
         margin={"50px 60px 50px 60px"}
         borderRadius={"20px"}
         shadow={"dark-lg"}
@@ -94,6 +113,7 @@ const About = () => {
         </CardBody>
       </Card>
       <Card
+        bgGradient={gradient}
         style={{
           backgroundColor: "rgba(255, 255, 255, .10)",
           backdropFilter: "blur(10px)",
@@ -174,6 +194,71 @@ const About = () => {
           </SimpleGrid>
         </CardBody>
       </Card>
+      <Box>
+        <VStack>
+          <SimpleGrid
+            textAlign={"center"}
+            columns={{ sm: 1, md: 2, lg: 3, xl: 3 }}
+            padding={"5px 60px 60px 60px"}
+            spacing={12}
+            alignContent={"space-between"}
+            templateColumns={{
+              base: "1fr",
+              lg: "1fr 1fr 1fr",
+            }}
+          >
+            <Card
+              border={bdrcolor}
+              bgGradient={gradient}
+              shadow={"lg"}
+              borderRadius={20}
+              id="grad"
+            >
+              <CardBody>
+                <br></br>
+                <Heading>Projects</Heading>
+                <Heading>5+</Heading>
+                <Text>
+                  I have developed multiple projects using a variety of
+                  technologies, including Ruby on Rails, ReactJS and SQL.
+                </Text>
+                <Link to="/projects">
+                  <Button color={icolor} variant={"outline"}>
+                    See All Projects
+                  </Button>
+                </Link>
+              </CardBody>
+            </Card>
+            <Card
+              border={bdrcolor}
+              bgGradient={gradient}
+              shadow={"lg"}
+              borderRadius={20}
+              id="grad"
+            >
+              <CardBody>
+                <PieChart />
+              </CardBody>
+            </Card>
+            <Card
+              border={bdrcolor}
+              bgGradient={gradient}
+              shadow={"lg"}
+              borderRadius={20}
+              id="grad"
+            >
+              <CardBody>
+                <PieChartS />
+                <Link to="/skills">
+                  <Button color={icolor} variant={"outline"}>
+                    See All Skills
+                  </Button>
+                </Link>
+              </CardBody>
+            </Card>
+          </SimpleGrid>
+        </VStack>
+      </Box>
     </Box>
   );
 };
