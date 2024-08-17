@@ -185,9 +185,11 @@ const Home = () => {
                   I have developed multiple projects using a variety of
                   technologies, including Ruby on Rails, ReactJS and SQL.
                 </Text>
-                <Button color={icolor} variant={"outline"}>
-                  <Link to="/projects">See All Projects</Link>
-                </Button>
+                <Link to="/projects">
+                  <Button color={icolor} variant={"outline"}>
+                    See All Projects
+                  </Button>
+                </Link>
               </CardBody>
             </Card>
             <Card
