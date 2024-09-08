@@ -18,18 +18,19 @@ const PieChart: React.FC = () => {
           trigger: "item",
         },
         legend: {
-          top: "1%",
+          top: "0%",
           left: "center",
           textStyle: {
             //@ts-ignore
-            color: { txtcolors }, // Change title text color
+            color: { txtcolors },
           },
+          padding: [0, 0, 0, 0],
         },
         series: [
           {
             name: "Access From",
             type: "pie",
-            radius: ["40%", "70%"],
+            radius: ["35%", "65%"],
             avoidLabelOverlap: false,
             label: {
               show: false,
