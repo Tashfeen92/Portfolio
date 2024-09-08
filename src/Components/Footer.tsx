@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <Box padding={"4"} bg="blackAlpha.900" minH={"8vh"}>
       <SimpleGrid
-        textAlign={"center"}
+        textAlign={"left"}
         columns={{ sm: 1, md: 2, lg: 3, xl: 3 }}
         padding={"10px"}
         spacing={6}
@@ -33,7 +33,7 @@ const Footer = () => {
           lg: "1fr 1fr 1fr",
         }}
       >
-        <VStack alignItems={alignValue} width={["full", "auto"]}>
+        <VStack alignItems={alignValue} justifyContent={"flex-start"} width={["full", "auto"]}>
           <Heading children="All Rights Reserved" color="white" />
           <Heading
             size="sm"
@@ -61,8 +61,8 @@ const Footer = () => {
               href="https://www.linkedin.com/in/muhammad-tashfeen-717777180"
               isExternal
             >
-              <Text marginTop={"5"} fontSize="sm" color="white" ml={2}>
-                LinkedIn Profile
+              <Text marginTop={5} fontSize="sm" color="white" ml={2} >
+                https://www.linkedin.com/in/muhammad-tashfeen-717777180
               </Text>
             </Link>
           </HStack>

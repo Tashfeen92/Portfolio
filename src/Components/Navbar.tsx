@@ -50,7 +50,7 @@ const Navbar = () => {
         px={[4, 8]}
         py={3}
       >
-        <Image src={logo} width="280px" marginLeft="50px" />
+        <Image src={logo} width="280px" marginLeft="1.3vw" />
         {/* Show the menu button on smaller screens */}
         <IconButton
           aria-label="Open menu"
