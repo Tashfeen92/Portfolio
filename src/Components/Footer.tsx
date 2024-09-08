@@ -62,7 +62,7 @@ const Footer = () => {
               isExternal
             >
               <Text marginTop={"5"} fontSize="sm" color="white" ml={2}>
-                https://www.linkedin.com/in/muhammad-tashfeen-717777180
+                LinkedIn Profile
               </Text>
             </Link>
           </HStack>
